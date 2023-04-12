@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="set_all_fonts" lang="en">
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="keywords"
+		content="Theodore Thomas, Theodore Eric Thomas, Theodore E. Thomas, programmer, analyst, developer, C++, C++ developer, Java, Java developer, javascript, javascript developer">
+	<meta name="description" content="My professional website to showcase my developmental skills.">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<!--
+Assignment: Designing in Dreamweaver
+Author: 	Theodore Eric Thomas
+Class: 		Web, Pgm, & Db Foundation (2023SP.CTI.110.0036)
+Creation 	Date: Feb 2023
+
+
+Description: Portfolio website created with the intent that this will be my final project.  
+-->
+<!--
+Assignment Lesson 7 criteria: 
+Modificaiton Date: Feb 23, 2023
+
+1) Does each page have a title
+2) Does the home page have a description and keywords
+3) Does the home page have contact information
+4) Does the home page have a last updated statement that will automatically update when the page is saved
+5) Do all paths for links and images work correctly
+6) Do all images have alternate text
+7) Are there any unnecessary files you can delete from the assets folders
+8) Is there a sytle sheet with a least two selectors
+9) Did you apply the selectors to all text
+10) Did you use selectors to position and format images.
+11) Do all pages look good using at least two different browsers and mobile tablet, and desktop sizes
+-->
+
+
+<body> <!-- class="set_all_fonts" -->
+	<div class="pic_with_name">
+		<!-- Image is a placeholder until I get an up to date pic -->
+		<img src="assets/html_logo.004.png" alt="" class="circle_boarder">
+		<h1 class="h1_changes">Theodore Eric Thomas </h1>
+		<h3 class="h1_changes">Developer</h3>
+		<div class="last_mod">
+			<p>Last Modified Date:&nbsp;&nbsp;</p>
+			<p id="udate"></p>
+		</div>
+	</div>
+	<form style="display: inline" action="aboutme.html" method="get">		
+		<button class="button">Bio</button>
+	</form>
+	<form action="resume.html" method="get">
+			<button class="button">Resume</button>
+	</form>
+	<form style="display: inline" action="skillsets.html" method="get">
+		<button class="button">Programming Skillsets</button>
+	</form>
+	<footer class="contact_me">
+		<p><a href="contact.html">contact</a></p>
+		<p><b>Address:</b> 1 Nice PL Garner, NC 27529</p>
+		<p><b>Phone:</b> (919) 773-9311</p>
+		<a href="mailto:tethomas@my.waketech.edu">tethomas@my.waketech.edu</a><br>
+		<a
+			href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftheodore-thomas-62569a56&data=05%7C01%7Ctethomas%40my.waketech.edu%7C37499a2fedf54152d6aa08db270f0092%7C16cc8ad984fe481db9b048e7758c41aa%7C0%7C0%7C638146717645045111%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=MBVxuAgUG1%2FhETKoyTTbSCZfeUwg69TXiiLgV%2BDV2dQ%3D&reserved=0">LinkedIn
+			Profile</a>
+	</footer>
+	<script>
+		let date = document.lastModified;
+		document.getElementById("udate").innerHTML = date;
+	</script>
+</body>
+
+</html>
